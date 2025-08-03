@@ -16,3 +16,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.hl.on_yank()
   end,
 })
+
+-- Create toggle-able color column
+function ToggleColorColumn()
+  local current = vim.wo.colorcolumn
+  if current == '' then
+    vim.wo.colorcolumn = '80'
+  else
+    vim.wo.colorcolumn = ''
+  end
+end
+
+vim.keymap.set('n', '<leader>tc', ToggleColorColumn, { desc = 'Toggle colorcolumn' })
