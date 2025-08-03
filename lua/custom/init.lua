@@ -1,4 +1,4 @@
-require 'custom.remaps'
+require 'custom.remap'
 require 'custom.set'
 require 'custom.colors'
 require 'custom.lazy'
