@@ -7,8 +7,8 @@ local theme = {}
 local palette = {
   bg = '#131419',
   fg = '#FCFAF7',
-  gray = '#46474F',
-  comment = '#46474F',
+  gray = '#5E5F6A',
+  comment = '#5E5F6A',
   accent = '#E2CEB6',
   error = '#FF5C5C',
   warning = '#EDDBC2',
@@ -73,6 +73,10 @@ function theme.setup()
   set(0, 'GitSignsAdd', { fg = palette.fg })
   set(0, 'GitSignsChange', { fg = palette.accent })
   set(0, 'GitSignsDelete', { fg = palette.error })
+
+  -- Setting YAML key color through treesitter
+  set(0, '@field.yaml', { fg = palette.type })
+  set(0, '@property.yaml', { fg = palette.type })
 end
 
 return theme
