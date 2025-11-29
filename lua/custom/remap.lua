@@ -8,7 +8,7 @@ vim.g.mapleader = ' '
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = '[P]roject [V]iew' })
+vim.keymap.set('n', '<leader>pv', vim.cmd.Oil, { desc = '[P]roject [V]iew' })
 
 vim.keymap.set('n', 'j', 'jzz')
 vim.keymap.set('n', 'k', 'kzz')
